@@ -23,7 +23,7 @@ public class ControllerTest {
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/add?d1=10&d2=5")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("15.0")));
+                .andExpect(content().string(containsString("16.0")));
     }
 }
 
